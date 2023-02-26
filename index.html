@@ -1,0 +1,19 @@
+<div id="text"></div>
+<script>
+    const container = document.getElementById("text")
+
+const text = "hello world"
+const interval = 400 
+const limit = text.length
+let = index = 0
+
+const idInterval = setInterval(function(){
+    console.log(index)
+    if (index <= limit){
+        container.innerText = text.slice(0, index++)
+    }else{
+        clearInterval(idInterval)
+    }
+    
+}, interval)
+</script>
